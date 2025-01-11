@@ -13,7 +13,7 @@ public class AppointmentDao {
 	@Autowired
 	private SessionFactory sf;
 
-	public String bookappointment(Appointment app) {
+	public String bookappointment(Appointment a) {
 		Session ss = null;
 		Transaction tr = null;
 		String msg = null;
@@ -21,7 +21,7 @@ public class AppointmentDao {
 		try {
 			ss = sf.openSession();
 			tr = ss.beginTransaction();
-			ss.persist(app);
+			ss.persist(a);
 			msg = "Your appointment has been successfully booked.";
 			tr.commit();
 
