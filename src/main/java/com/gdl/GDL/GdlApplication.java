@@ -8,6 +8,7 @@ public class GdlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GdlApplication.class, args);
+		System.out.println("Application Started...");
 	}
 
 }
