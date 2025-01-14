@@ -14,14 +14,13 @@ public class Appointment {
 	private LocalTime appointmentTime;
 
 	private String patientName;
-	private Integer patientAge;
+	private int patientAge; 
 
 	public Appointment() {
-
 	}
 
 	public Appointment(Long appointmentId, LocalDate appointmentDate, LocalTime appointmentTime, String patientName,
-			Integer patientAge) {
+			int patientAge) { 
 		super();
 		this.appointmentId = appointmentId;
 		this.appointmentDate = appointmentDate;
@@ -62,11 +61,11 @@ public class Appointment {
 		this.patientName = patientName;
 	}
 
-	public Integer getPatientAge() {
+	public int getPatientAge() { 
 		return patientAge;
 	}
 
-	public void setPatientAge(Integer patientAge) {
+	public void setPatientAge(int patientAge) { 
 		this.patientAge = patientAge;
 	}
 

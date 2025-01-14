@@ -28,9 +28,7 @@ public class AppointmentDao {
 		} catch (Exception e) {
 
 			if (tr != null) {
-
 				tr.rollback();
-
 			}
 			e.printStackTrace();
 		} finally {

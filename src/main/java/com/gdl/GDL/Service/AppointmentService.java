@@ -14,8 +14,6 @@ public class AppointmentService {
 	public String bookappointment(Appointment a) {
 
 		String msg = ad.bookappointment(a);
-
 		return msg;
-
 	}
 }
